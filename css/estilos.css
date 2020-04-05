@@ -678,7 +678,7 @@ figure {
   .burger-button{
     display: block;
   }
-  
+
   .hero{
     height: auto;
     position: relative;
@@ -799,7 +799,7 @@ figure {
     margin: 0px;
     column-gap: 10px;
   }
-  
+
   h1{
     font-size: 1.5em;
   }
