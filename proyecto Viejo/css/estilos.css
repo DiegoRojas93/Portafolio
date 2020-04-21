@@ -233,7 +233,7 @@ figure {
   display: none;
 }
 
-#Presentacion{
+.Presentacion{
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: -.2px;
@@ -422,7 +422,7 @@ figure {
   margin-left: 20px;
 }
 
-.briefcase {
+.briefcase { 
   box-sizing: border-box;
   border: 2px solid #2E1354;
   margin: 1%;
@@ -467,7 +467,6 @@ figure {
   padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin: 5px;
 }
 
 

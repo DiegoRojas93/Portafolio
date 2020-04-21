@@ -1,0 +1,41 @@
+mixin nav-list  (referencia)
+  li
+    a(class="link" href="#"+referencia) #{referencia}
+
+mixin title(clase)
+  h1(id=""+clase)
+    | Hola! soy 
+    strong Diego Fernando Rojas Quintero 
+    br
+    | un 
+    strong Joven programador 
+    | con 
+    br
+    | pasión por la 
+    strong Tecnologia
+
+mixin video(link)
+  article.Video__youtube
+    iframe(width="400" height="225" src=""+link frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+mixin skill (logo,altura, titulo)
+  li
+    img(src="images/Logo_"+logo+".png", alt="Logo_"+logo,widht="50", height=""+altura)
+    h4 #{titulo}
+
+mixin certificado(certificado,image, link)
+  article.Certificado__item
+    img(src="images/"+image alt="Certificado"+certificado width="200" height="157.6")
+    figure
+      a(href=""+link)
+        button Ver certificado
+
+mixin trabajo (fondo, title, description, proyecto, repositorio)
+  article.briefcase
+    figure.briefcase__imageContainer
+      img(class="briefcase-image" src="images/"+fondo width="500")
+    .briefcase-detail
+      h3.briefcase-title #{title}
+      p.briefcase-description #{description}
+      a(class="briefcase-url" href=""+proyecto target="_blank") Ver Proyecto
+      a(class="briefcase-url" href=""+repositorio) Ver Codigo
